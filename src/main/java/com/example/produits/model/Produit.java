@@ -18,6 +18,9 @@ public class Produit implements Serializable {
         this.quantity = quantity;
     }
 
+    public Produit(String laptopHp, int i, int i1) {
+    }
+
     public Long getId() {
         return id;
     }
@@ -48,5 +51,15 @@ public class Produit implements Serializable {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "Produit{" +
+                "id=" + id +
+                ", designation='" + designation + '\'' +
+                ", price=" + price +
+                ", quantity=" + quantity +
+                '}';
     }
 }
